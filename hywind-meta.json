@@ -41,6 +41,46 @@
       "description": "(nav) Tab navigation bar."
     },
     {
+      "className": "dynamic-image",
+      "origin": "HyUI",
+      "description": "(img) Downloads and streams a PNG at runtime (see Dynamic Images)."
+    },
+    {
+      "className": "button-back",
+      "origin": "HyUI",
+      "description": "(button) Styled button of type back."
+    },
+    {
+      "className": "button-secondary",
+      "origin": "HyUI",
+      "description": "(button) Styled button of type secondary."
+    },
+    {
+      "className": "button-small-secondary",
+      "origin": "HyUI",
+      "description": "(button) Styled button of type small-secondary."
+    },
+    {
+      "className": "button-tertiary",
+      "origin": "HyUI",
+      "description": "(button) Styled button of type tertiary."
+    },
+    {
+      "className": "button-small-tertiary",
+      "origin": "HyUI",
+      "description": "(button) Styled button of type small-tertiary."
+    },
+    {
+      "className": "button-custom",
+      "origin": "HyUI",
+      "description": "(button) Styled button of type custom."
+    },
+    {
+      "className": "custom-textbutton",
+      "origin": "HyUI",
+      "description": "(button) Alternative to custom-button."
+    },
+    {
       "className": "p-0",
       "description": "",
       "origin": "Hywind",

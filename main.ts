@@ -285,6 +285,13 @@ metadataClass("item-slot", "(span) Displays a full item slot. Use data-hyui-item
 metadataClass("item-grid", "(span) Displays an item grid container.")
 metadataClass("item-grid-slot", "(span) Adds a slot entry inside an item grid.")
 metadataClass("tabs", "(nav) Tab navigation bar.")
+metadataClass("dynamic-image", "(img) Downloads and streams a PNG at runtime (see Dynamic Images).")
+
+  ;["back", "secondary", "small-secondary", "tertiary", "small-tertiary", "custom"].forEach(btnType => {
+    metadataClass(`button-${btnType}`, `(button) Styled button of type ${btnType}.`);
+  });
+
+metadataClass("custom-textbutton", "(button) Alternative to custom-button.");
 
 // Anchors
 
