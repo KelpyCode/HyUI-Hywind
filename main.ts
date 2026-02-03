@@ -1,6 +1,6 @@
 import { writeFileSync } from "node:fs";
 import colors from "npm:tailwindcss/colors"
-import { oklchStringToRgb255 } from './color.ts';
+import { oklchStringToRgb255, rgbToHex } from './color.ts';
 import { DOMParser, Element } from "jsr:@b-fuze/deno-dom";
 
 
@@ -72,6 +72,10 @@ const DEFINITIONS = {
     "7xl": 700,
     "8xl": 800,
     "9xl": 900
+  },
+  sizesGen: {
+    amount: 20,
+    scale: 1
   }
 }
 
@@ -262,7 +266,7 @@ for (let i = 0; i <= DEFINITIONS.padding.amount; i++) {
 
 // Flex
 rules.push(
-  simpleRule(".flex > *", "flex-weight", "1"),
+  // simpleRule(".flex > *", "flex-weight", "1"),
   simpleRule(".flex-col", "layout-mode", "left"),
   simpleRule(".flex-row", "layout-mode", "top"),
   ...simpleMappedRules(".flex", "flex-weight", ["0", "1", "2", "3", "4"]),
@@ -279,6 +283,8 @@ rules.push(
 
 metadataClass("tab-content", "(div) Tab content container linked to a tab ID.")
 metadataClass("decorated-container", "(div) Uses the decorated container UI file for a styled frame.")
+metadataClass("container-title", "(div) Child element of a container to put elements in the header.")
+metadataClass("container-contents", "(div) Child element of a container to put elements in the body.")
 metadataClass("container", "(div) Uses the container UI file for a frame with minimal style.")
 metadataClass("item-icon", "(span) Displays an item icon. Use data-hyui-item-id for the item icon.")
 metadataClass("item-slot", "(span) Displays a full item slot. Use data-hyui-item-id for the item.")
@@ -315,6 +321,13 @@ for (const anchor of [["width", "w"], ["height", "h"]]) {
       return simpleRule(`.${anchor[1]}-${name}`, `anchor-${anchor[0]}`, `${value}`);
     })
   );
+
+  for (let i = 1; i <= DEFINITIONS.sizesGen.amount; i++) {
+    const sizeValue = i * DEFINITIONS.sizesGen.scale;
+    rules.push(
+      simpleRule(`.${anchor[1]}-${sizeValue}`, `anchor-${anchor[0]}`, `${sizeValue}`)
+    );
+  }
 }
 
 // Text sizes
@@ -378,6 +391,14 @@ for (const [name, value] of Object.entries(colors)) {
   }
 }
 
+rules.push(
+  simpleRule(".bg-transparent", "background-color", "rgba(0,0,0,0)", "Sets background color to transparent"),
+  simpleRule(".bg-black", "background-color", "#000000", "Sets background color to black"),
+  simpleRule(".bg-white", "background-color", "#FFFFFF", "Sets background color to white"),
+  simpleRule(".text-black", "color", "#000000", "Sets text color to black"),
+  simpleRule(".text-white", "color", "#FFFFFF", "Sets text color to white")
+)
+
 // Text color
 
 for (const [name, value] of Object.entries(colors)) {
@@ -391,7 +412,7 @@ for (const [name, value] of Object.entries(colors)) {
         properties: [
           {
             property: "color",
-            value: `rgb(${rgb.r}, ${rgb.g}, ${rgb.b})`
+            value: rgbToHex(rgb)
           }
         ],
         previewColor: rgb,
@@ -411,7 +432,7 @@ for (const [name, value] of Object.entries(colors)) {
             properties: [
               {
                 property: "color",
-                value: `rgb(${rgb.r}, ${rgb.g}, ${rgb.b})`
+                value: rgbToHex(rgb)
               }
             ],
             previewColor: rgb,

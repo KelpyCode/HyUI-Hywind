@@ -11,6 +11,16 @@
       "description": "(div) Uses the decorated container UI file for a styled frame."
     },
     {
+      "className": "container-title",
+      "origin": "HyUI",
+      "description": "(div) Child element of a container to put elements in the header."
+    },
+    {
+      "className": "container-contents",
+      "origin": "HyUI",
+      "description": "(div) Child element of a container to put elements in the body."
+    },
+    {
       "className": "container",
       "origin": "HyUI",
       "description": "(div) Uses the container UI file for a frame with minimal style."
@@ -145,12 +155,6 @@
       "description": "",
       "origin": "Hywind",
       "code": "padding: 20"
-    },
-    {
-      "className": "flex > *",
-      "description": "",
-      "origin": "Hywind",
-      "code": "flex-weight: 1"
     },
     {
       "className": "flex-col",
@@ -1629,6 +1633,126 @@
       "code": "anchor-width: 900"
     },
     {
+      "className": "w-1",
+      "description": "",
+      "origin": "Hywind",
+      "code": "anchor-width: 1"
+    },
+    {
+      "className": "w-2",
+      "description": "",
+      "origin": "Hywind",
+      "code": "anchor-width: 2"
+    },
+    {
+      "className": "w-3",
+      "description": "",
+      "origin": "Hywind",
+      "code": "anchor-width: 3"
+    },
+    {
+      "className": "w-4",
+      "description": "",
+      "origin": "Hywind",
+      "code": "anchor-width: 4"
+    },
+    {
+      "className": "w-5",
+      "description": "",
+      "origin": "Hywind",
+      "code": "anchor-width: 5"
+    },
+    {
+      "className": "w-6",
+      "description": "",
+      "origin": "Hywind",
+      "code": "anchor-width: 6"
+    },
+    {
+      "className": "w-7",
+      "description": "",
+      "origin": "Hywind",
+      "code": "anchor-width: 7"
+    },
+    {
+      "className": "w-8",
+      "description": "",
+      "origin": "Hywind",
+      "code": "anchor-width: 8"
+    },
+    {
+      "className": "w-9",
+      "description": "",
+      "origin": "Hywind",
+      "code": "anchor-width: 9"
+    },
+    {
+      "className": "w-10",
+      "description": "",
+      "origin": "Hywind",
+      "code": "anchor-width: 10"
+    },
+    {
+      "className": "w-11",
+      "description": "",
+      "origin": "Hywind",
+      "code": "anchor-width: 11"
+    },
+    {
+      "className": "w-12",
+      "description": "",
+      "origin": "Hywind",
+      "code": "anchor-width: 12"
+    },
+    {
+      "className": "w-13",
+      "description": "",
+      "origin": "Hywind",
+      "code": "anchor-width: 13"
+    },
+    {
+      "className": "w-14",
+      "description": "",
+      "origin": "Hywind",
+      "code": "anchor-width: 14"
+    },
+    {
+      "className": "w-15",
+      "description": "",
+      "origin": "Hywind",
+      "code": "anchor-width: 15"
+    },
+    {
+      "className": "w-16",
+      "description": "",
+      "origin": "Hywind",
+      "code": "anchor-width: 16"
+    },
+    {
+      "className": "w-17",
+      "description": "",
+      "origin": "Hywind",
+      "code": "anchor-width: 17"
+    },
+    {
+      "className": "w-18",
+      "description": "",
+      "origin": "Hywind",
+      "code": "anchor-width: 18"
+    },
+    {
+      "className": "w-19",
+      "description": "",
+      "origin": "Hywind",
+      "code": "anchor-width: 19"
+    },
+    {
+      "className": "w-20",
+      "description": "",
+      "origin": "Hywind",
+      "code": "anchor-width: 20"
+    },
+    {
       "className": "h-xs",
       "description": "",
       "origin": "Hywind",
@@ -1705,6 +1829,126 @@
       "description": "",
       "origin": "Hywind",
       "code": "anchor-height: 900"
+    },
+    {
+      "className": "h-1",
+      "description": "",
+      "origin": "Hywind",
+      "code": "anchor-height: 1"
+    },
+    {
+      "className": "h-2",
+      "description": "",
+      "origin": "Hywind",
+      "code": "anchor-height: 2"
+    },
+    {
+      "className": "h-3",
+      "description": "",
+      "origin": "Hywind",
+      "code": "anchor-height: 3"
+    },
+    {
+      "className": "h-4",
+      "description": "",
+      "origin": "Hywind",
+      "code": "anchor-height: 4"
+    },
+    {
+      "className": "h-5",
+      "description": "",
+      "origin": "Hywind",
+      "code": "anchor-height: 5"
+    },
+    {
+      "className": "h-6",
+      "description": "",
+      "origin": "Hywind",
+      "code": "anchor-height: 6"
+    },
+    {
+      "className": "h-7",
+      "description": "",
+      "origin": "Hywind",
+      "code": "anchor-height: 7"
+    },
+    {
+      "className": "h-8",
+      "description": "",
+      "origin": "Hywind",
+      "code": "anchor-height: 8"
+    },
+    {
+      "className": "h-9",
+      "description": "",
+      "origin": "Hywind",
+      "code": "anchor-height: 9"
+    },
+    {
+      "className": "h-10",
+      "description": "",
+      "origin": "Hywind",
+      "code": "anchor-height: 10"
+    },
+    {
+      "className": "h-11",
+      "description": "",
+      "origin": "Hywind",
+      "code": "anchor-height: 11"
+    },
+    {
+      "className": "h-12",
+      "description": "",
+      "origin": "Hywind",
+      "code": "anchor-height: 12"
+    },
+    {
+      "className": "h-13",
+      "description": "",
+      "origin": "Hywind",
+      "code": "anchor-height: 13"
+    },
+    {
+      "className": "h-14",
+      "description": "",
+      "origin": "Hywind",
+      "code": "anchor-height: 14"
+    },
+    {
+      "className": "h-15",
+      "description": "",
+      "origin": "Hywind",
+      "code": "anchor-height: 15"
+    },
+    {
+      "className": "h-16",
+      "description": "",
+      "origin": "Hywind",
+      "code": "anchor-height: 16"
+    },
+    {
+      "className": "h-17",
+      "description": "",
+      "origin": "Hywind",
+      "code": "anchor-height: 17"
+    },
+    {
+      "className": "h-18",
+      "description": "",
+      "origin": "Hywind",
+      "code": "anchor-height: 18"
+    },
+    {
+      "className": "h-19",
+      "description": "",
+      "origin": "Hywind",
+      "code": "anchor-height: 19"
+    },
+    {
+      "className": "h-20",
+      "description": "",
+      "origin": "Hywind",
+      "code": "anchor-height: 20"
     },
     {
       "className": "text-xs",
@@ -4399,10 +4643,40 @@
       }
     },
     {
+      "className": "bg-transparent",
+      "description": "Sets background color to transparent",
+      "origin": "Hywind",
+      "code": "background-color: rgba(0,0,0,0)"
+    },
+    {
+      "className": "bg-black",
+      "description": "Sets background color to black",
+      "origin": "Hywind",
+      "code": "background-color: #000000"
+    },
+    {
+      "className": "bg-white",
+      "description": "Sets background color to white",
+      "origin": "Hywind",
+      "code": "background-color: #FFFFFF"
+    },
+    {
+      "className": "text-black",
+      "description": "Sets text color to black",
+      "origin": "Hywind",
+      "code": "color: #000000"
+    },
+    {
+      "className": "text-white",
+      "description": "Sets text color to white",
+      "origin": "Hywind",
+      "code": "color: #FFFFFF"
+    },
+    {
       "className": "text-slate-50",
       "description": "Sets text color to slate",
       "origin": "Hywind",
-      "code": "color: rgb(248, 250, 252)",
+      "code": "color: #f8fafc",
       "previewColor": {
         "r": 248,
         "g": 250,
@@ -4413,7 +4687,7 @@
       "className": "text-slate-100",
       "description": "Sets text color to slate",
       "origin": "Hywind",
-      "code": "color: rgb(241, 245, 249)",
+      "code": "color: #f1f5f9",
       "previewColor": {
         "r": 241,
         "g": 245,
@@ -4424,7 +4698,7 @@
       "className": "text-slate-200",
       "description": "Sets text color to slate",
       "origin": "Hywind",
-      "code": "color: rgb(226, 232, 240)",
+      "code": "color: #e2e8f0",
       "previewColor": {
         "r": 226,
         "g": 232,
@@ -4435,7 +4709,7 @@
       "className": "text-slate-300",
       "description": "Sets text color to slate",
       "origin": "Hywind",
-      "code": "color: rgb(202, 213, 226)",
+      "code": "color: #cad5e2",
       "previewColor": {
         "r": 202,
         "g": 213,
@@ -4446,7 +4720,7 @@
       "className": "text-slate-400",
       "description": "Sets text color to slate",
       "origin": "Hywind",
-      "code": "color: rgb(144, 161, 185)",
+      "code": "color: #90a1b9",
       "previewColor": {
         "r": 144,
         "g": 161,
@@ -4457,7 +4731,7 @@
       "className": "text-slate-500",
       "description": "Sets text color to slate",
       "origin": "Hywind",
-      "code": "color: rgb(98, 116, 142)",
+      "code": "color: #62748e",
       "previewColor": {
         "r": 98,
         "g": 116,
@@ -4468,7 +4742,7 @@
       "className": "text-slate-600",
       "description": "Sets text color to slate",
       "origin": "Hywind",
-      "code": "color: rgb(69, 85, 108)",
+      "code": "color: #45556c",
       "previewColor": {
         "r": 69,
         "g": 85,
@@ -4479,7 +4753,7 @@
       "className": "text-slate-700",
       "description": "Sets text color to slate",
       "origin": "Hywind",
-      "code": "color: rgb(49, 65, 88)",
+      "code": "color: #314158",
       "previewColor": {
         "r": 49,
         "g": 65,
@@ -4490,7 +4764,7 @@
       "className": "text-slate-800",
       "description": "Sets text color to slate",
       "origin": "Hywind",
-      "code": "color: rgb(29, 41, 61)",
+      "code": "color: #1d293d",
       "previewColor": {
         "r": 29,
         "g": 41,
@@ -4501,7 +4775,7 @@
       "className": "text-slate-900",
       "description": "Sets text color to slate",
       "origin": "Hywind",
-      "code": "color: rgb(15, 23, 43)",
+      "code": "color: #0f172b",
       "previewColor": {
         "r": 15,
         "g": 23,
@@ -4512,7 +4786,7 @@
       "className": "text-slate-950",
       "description": "Sets text color to slate",
       "origin": "Hywind",
-      "code": "color: rgb(2, 6, 24)",
+      "code": "color: #020618",
       "previewColor": {
         "r": 2,
         "g": 6,
@@ -4523,7 +4797,7 @@
       "className": "text-gray-50",
       "description": "Sets text color to gray",
       "origin": "Hywind",
-      "code": "color: rgb(249, 250, 251)",
+      "code": "color: #f9fafb",
       "previewColor": {
         "r": 249,
         "g": 250,
@@ -4534,7 +4808,7 @@
       "className": "text-gray-100",
       "description": "Sets text color to gray",
       "origin": "Hywind",
-      "code": "color: rgb(243, 244, 246)",
+      "code": "color: #f3f4f6",
       "previewColor": {
         "r": 243,
         "g": 244,
@@ -4545,7 +4819,7 @@
       "className": "text-gray-200",
       "description": "Sets text color to gray",
       "origin": "Hywind",
-      "code": "color: rgb(229, 231, 235)",
+      "code": "color: #e5e7eb",
       "previewColor": {
         "r": 229,
         "g": 231,
@@ -4556,7 +4830,7 @@
       "className": "text-gray-300",
       "description": "Sets text color to gray",
       "origin": "Hywind",
-      "code": "color: rgb(209, 213, 220)",
+      "code": "color: #d1d5dc",
       "previewColor": {
         "r": 209,
         "g": 213,
@@ -4567,7 +4841,7 @@
       "className": "text-gray-400",
       "description": "Sets text color to gray",
       "origin": "Hywind",
-      "code": "color: rgb(153, 161, 175)",
+      "code": "color: #99a1af",
       "previewColor": {
         "r": 153,
         "g": 161,
@@ -4578,7 +4852,7 @@
       "className": "text-gray-500",
       "description": "Sets text color to gray",
       "origin": "Hywind",
-      "code": "color: rgb(106, 114, 130)",
+      "code": "color: #6a7282",
       "previewColor": {
         "r": 106,
         "g": 114,
@@ -4589,7 +4863,7 @@
       "className": "text-gray-600",
       "description": "Sets text color to gray",
       "origin": "Hywind",
-      "code": "color: rgb(74, 85, 101)",
+      "code": "color: #4a5565",
       "previewColor": {
         "r": 74,
         "g": 85,
@@ -4600,7 +4874,7 @@
       "className": "text-gray-700",
       "description": "Sets text color to gray",
       "origin": "Hywind",
-      "code": "color: rgb(54, 65, 83)",
+      "code": "color: #364153",
       "previewColor": {
         "r": 54,
         "g": 65,
@@ -4611,7 +4885,7 @@
       "className": "text-gray-800",
       "description": "Sets text color to gray",
       "origin": "Hywind",
-      "code": "color: rgb(30, 41, 57)",
+      "code": "color: #1e2939",
       "previewColor": {
         "r": 30,
         "g": 41,
@@ -4622,7 +4896,7 @@
       "className": "text-gray-900",
       "description": "Sets text color to gray",
       "origin": "Hywind",
-      "code": "color: rgb(16, 24, 40)",
+      "code": "color: #101828",
       "previewColor": {
         "r": 16,
         "g": 24,
@@ -4633,7 +4907,7 @@
       "className": "text-gray-950",
       "description": "Sets text color to gray",
       "origin": "Hywind",
-      "code": "color: rgb(3, 7, 18)",
+      "code": "color: #030712",
       "previewColor": {
         "r": 3,
         "g": 7,
@@ -4644,7 +4918,7 @@
       "className": "text-zinc-50",
       "description": "Sets text color to zinc",
       "origin": "Hywind",
-      "code": "color: rgb(250, 250, 250)",
+      "code": "color: #fafafa",
       "previewColor": {
         "r": 250,
         "g": 250,
@@ -4655,7 +4929,7 @@
       "className": "text-zinc-100",
       "description": "Sets text color to zinc",
       "origin": "Hywind",
-      "code": "color: rgb(244, 244, 245)",
+      "code": "color: #f4f4f5",
       "previewColor": {
         "r": 244,
         "g": 244,
@@ -4666,7 +4940,7 @@
       "className": "text-zinc-200",
       "description": "Sets text color to zinc",
       "origin": "Hywind",
-      "code": "color: rgb(228, 228, 231)",
+      "code": "color: #e4e4e7",
       "previewColor": {
         "r": 228,
         "g": 228,
@@ -4677,7 +4951,7 @@
       "className": "text-zinc-300",
       "description": "Sets text color to zinc",
       "origin": "Hywind",
-      "code": "color: rgb(212, 212, 216)",
+      "code": "color: #d4d4d8",
       "previewColor": {
         "r": 212,
         "g": 212,
@@ -4688,7 +4962,7 @@
       "className": "text-zinc-400",
       "description": "Sets text color to zinc",
       "origin": "Hywind",
-      "code": "color: rgb(159, 159, 169)",
+      "code": "color: #9f9fa9",
       "previewColor": {
         "r": 159,
         "g": 159,
@@ -4699,7 +4973,7 @@
       "className": "text-zinc-500",
       "description": "Sets text color to zinc",
       "origin": "Hywind",
-      "code": "color: rgb(113, 113, 123)",
+      "code": "color: #71717b",
       "previewColor": {
         "r": 113,
         "g": 113,
@@ -4710,7 +4984,7 @@
       "className": "text-zinc-600",
       "description": "Sets text color to zinc",
       "origin": "Hywind",
-      "code": "color: rgb(82, 82, 92)",
+      "code": "color: #52525c",
       "previewColor": {
         "r": 82,
         "g": 82,
@@ -4721,7 +4995,7 @@
       "className": "text-zinc-700",
       "description": "Sets text color to zinc",
       "origin": "Hywind",
-      "code": "color: rgb(63, 63, 70)",
+      "code": "color: #3f3f46",
       "previewColor": {
         "r": 63,
         "g": 63,
@@ -4732,7 +5006,7 @@
       "className": "text-zinc-800",
       "description": "Sets text color to zinc",
       "origin": "Hywind",
-      "code": "color: rgb(39, 39, 42)",
+      "code": "color: #27272a",
       "previewColor": {
         "r": 39,
         "g": 39,
@@ -4743,7 +5017,7 @@
       "className": "text-zinc-900",
       "description": "Sets text color to zinc",
       "origin": "Hywind",
-      "code": "color: rgb(24, 24, 27)",
+      "code": "color: #18181b",
       "previewColor": {
         "r": 24,
         "g": 24,
@@ -4754,7 +5028,7 @@
       "className": "text-zinc-950",
       "description": "Sets text color to zinc",
       "origin": "Hywind",
-      "code": "color: rgb(9, 9, 11)",
+      "code": "color: #09090b",
       "previewColor": {
         "r": 9,
         "g": 9,
@@ -4765,7 +5039,7 @@
       "className": "text-neutral-50",
       "description": "Sets text color to neutral",
       "origin": "Hywind",
-      "code": "color: rgb(250, 250, 250)",
+      "code": "color: #fafafa",
       "previewColor": {
         "r": 250,
         "g": 250,
@@ -4776,7 +5050,7 @@
       "className": "text-neutral-100",
       "description": "Sets text color to neutral",
       "origin": "Hywind",
-      "code": "color: rgb(245, 245, 245)",
+      "code": "color: #f5f5f5",
       "previewColor": {
         "r": 245,
         "g": 245,
@@ -4787,7 +5061,7 @@
       "className": "text-neutral-200",
       "description": "Sets text color to neutral",
       "origin": "Hywind",
-      "code": "color: rgb(229, 229, 229)",
+      "code": "color: #e5e5e5",
       "previewColor": {
         "r": 229,
         "g": 229,
@@ -4798,7 +5072,7 @@
       "className": "text-neutral-300",
       "description": "Sets text color to neutral",
       "origin": "Hywind",
-      "code": "color: rgb(212, 212, 212)",
+      "code": "color: #d4d4d4",
       "previewColor": {
         "r": 212,
         "g": 212,
@@ -4809,7 +5083,7 @@
       "className": "text-neutral-400",
       "description": "Sets text color to neutral",
       "origin": "Hywind",
-      "code": "color: rgb(161, 161, 161)",
+      "code": "color: #a1a1a1",
       "previewColor": {
         "r": 161,
         "g": 161,
@@ -4820,7 +5094,7 @@
       "className": "text-neutral-500",
       "description": "Sets text color to neutral",
       "origin": "Hywind",
-      "code": "color: rgb(115, 115, 115)",
+      "code": "color: #737373",
       "previewColor": {
         "r": 115,
         "g": 115,
@@ -4831,7 +5105,7 @@
       "className": "text-neutral-600",
       "description": "Sets text color to neutral",
       "origin": "Hywind",
-      "code": "color: rgb(82, 82, 82)",
+      "code": "color: #525252",
       "previewColor": {
         "r": 82,
         "g": 82,
@@ -4842,7 +5116,7 @@
       "className": "text-neutral-700",
       "description": "Sets text color to neutral",
       "origin": "Hywind",
-      "code": "color: rgb(64, 64, 64)",
+      "code": "color: #404040",
       "previewColor": {
         "r": 64,
         "g": 64,
@@ -4853,7 +5127,7 @@
       "className": "text-neutral-800",
       "description": "Sets text color to neutral",
       "origin": "Hywind",
-      "code": "color: rgb(38, 38, 38)",
+      "code": "color: #262626",
       "previewColor": {
         "r": 38,
         "g": 38,
@@ -4864,7 +5138,7 @@
       "className": "text-neutral-900",
       "description": "Sets text color to neutral",
       "origin": "Hywind",
-      "code": "color: rgb(23, 23, 23)",
+      "code": "color: #171717",
       "previewColor": {
         "r": 23,
         "g": 23,
@@ -4875,7 +5149,7 @@
       "className": "text-neutral-950",
       "description": "Sets text color to neutral",
       "origin": "Hywind",
-      "code": "color: rgb(10, 10, 10)",
+      "code": "color: #0a0a0a",
       "previewColor": {
         "r": 10,
         "g": 10,
@@ -4886,7 +5160,7 @@
       "className": "text-stone-50",
       "description": "Sets text color to stone",
       "origin": "Hywind",
-      "code": "color: rgb(250, 250, 249)",
+      "code": "color: #fafaf9",
       "previewColor": {
         "r": 250,
         "g": 250,
@@ -4897,7 +5171,7 @@
       "className": "text-stone-100",
       "description": "Sets text color to stone",
       "origin": "Hywind",
-      "code": "color: rgb(245, 245, 244)",
+      "code": "color: #f5f5f4",
       "previewColor": {
         "r": 245,
         "g": 245,
@@ -4908,7 +5182,7 @@
       "className": "text-stone-200",
       "description": "Sets text color to stone",
       "origin": "Hywind",
-      "code": "color: rgb(231, 229, 228)",
+      "code": "color: #e7e5e4",
       "previewColor": {
         "r": 231,
         "g": 229,
@@ -4919,7 +5193,7 @@
       "className": "text-stone-300",
       "description": "Sets text color to stone",
       "origin": "Hywind",
-      "code": "color: rgb(214, 211, 209)",
+      "code": "color: #d6d3d1",
       "previewColor": {
         "r": 214,
         "g": 211,
@@ -4930,7 +5204,7 @@
       "className": "text-stone-400",
       "description": "Sets text color to stone",
       "origin": "Hywind",
-      "code": "color: rgb(166, 160, 155)",
+      "code": "color: #a6a09b",
       "previewColor": {
         "r": 166,
         "g": 160,
@@ -4941,7 +5215,7 @@
       "className": "text-stone-500",
       "description": "Sets text color to stone",
       "origin": "Hywind",
-      "code": "color: rgb(121, 113, 107)",
+      "code": "color: #79716b",
       "previewColor": {
         "r": 121,
         "g": 113,
@@ -4952,7 +5226,7 @@
       "className": "text-stone-600",
       "description": "Sets text color to stone",
       "origin": "Hywind",
-      "code": "color: rgb(87, 83, 77)",
+      "code": "color: #57534d",
       "previewColor": {
         "r": 87,
         "g": 83,
@@ -4963,7 +5237,7 @@
       "className": "text-stone-700",
       "description": "Sets text color to stone",
       "origin": "Hywind",
-      "code": "color: rgb(68, 64, 59)",
+      "code": "color: #44403b",
       "previewColor": {
         "r": 68,
         "g": 64,
@@ -4974,7 +5248,7 @@
       "className": "text-stone-800",
       "description": "Sets text color to stone",
       "origin": "Hywind",
-      "code": "color: rgb(41, 37, 36)",
+      "code": "color: #292524",
       "previewColor": {
         "r": 41,
         "g": 37,
@@ -4985,7 +5259,7 @@
       "className": "text-stone-900",
       "description": "Sets text color to stone",
       "origin": "Hywind",
-      "code": "color: rgb(28, 25, 23)",
+      "code": "color: #1c1917",
       "previewColor": {
         "r": 28,
         "g": 25,
@@ -4996,7 +5270,7 @@
       "className": "text-stone-950",
       "description": "Sets text color to stone",
       "origin": "Hywind",
-      "code": "color: rgb(12, 10, 9)",
+      "code": "color: #0c0a09",
       "previewColor": {
         "r": 12,
         "g": 10,
@@ -5007,7 +5281,7 @@
       "className": "text-red-50",
       "description": "Sets text color to red",
       "origin": "Hywind",
-      "code": "color: rgb(254, 242, 242)",
+      "code": "color: #fef2f2",
       "previewColor": {
         "r": 254,
         "g": 242,
@@ -5018,7 +5292,7 @@
       "className": "text-red-100",
       "description": "Sets text color to red",
       "origin": "Hywind",
-      "code": "color: rgb(255, 226, 226)",
+      "code": "color: #ffe2e2",
       "previewColor": {
         "r": 255,
         "g": 226,
@@ -5029,7 +5303,7 @@
       "className": "text-red-200",
       "description": "Sets text color to red",
       "origin": "Hywind",
-      "code": "color: rgb(255, 201, 201)",
+      "code": "color: #ffc9c9",
       "previewColor": {
         "r": 255,
         "g": 201,
@@ -5040,7 +5314,7 @@
       "className": "text-red-300",
       "description": "Sets text color to red",
       "origin": "Hywind",
-      "code": "color: rgb(255, 162, 162)",
+      "code": "color: #ffa2a2",
       "previewColor": {
         "r": 255,
         "g": 162,
@@ -5051,7 +5325,7 @@
       "className": "text-red-400",
       "description": "Sets text color to red",
       "origin": "Hywind",
-      "code": "color: rgb(255, 100, 103)",
+      "code": "color: #ff6467",
       "previewColor": {
         "r": 255,
         "g": 100,
@@ -5062,7 +5336,7 @@
       "className": "text-red-500",
       "description": "Sets text color to red",
       "origin": "Hywind",
-      "code": "color: rgb(251, 44, 54)",
+      "code": "color: #fb2c36",
       "previewColor": {
         "r": 251,
         "g": 44,
@@ -5073,7 +5347,7 @@
       "className": "text-red-600",
       "description": "Sets text color to red",
       "origin": "Hywind",
-      "code": "color: rgb(231, 0, 11)",
+      "code": "color: #e7000b",
       "previewColor": {
         "r": 231,
         "g": 0,
@@ -5084,7 +5358,7 @@
       "className": "text-red-700",
       "description": "Sets text color to red",
       "origin": "Hywind",
-      "code": "color: rgb(193, 0, 7)",
+      "code": "color: #c10007",
       "previewColor": {
         "r": 193,
         "g": 0,
@@ -5095,7 +5369,7 @@
       "className": "text-red-800",
       "description": "Sets text color to red",
       "origin": "Hywind",
-      "code": "color: rgb(159, 7, 18)",
+      "code": "color: #9f0712",
       "previewColor": {
         "r": 159,
         "g": 7,
@@ -5106,7 +5380,7 @@
       "className": "text-red-900",
       "description": "Sets text color to red",
       "origin": "Hywind",
-      "code": "color: rgb(130, 24, 26)",
+      "code": "color: #82181a",
       "previewColor": {
         "r": 130,
         "g": 24,
@@ -5117,7 +5391,7 @@
       "className": "text-red-950",
       "description": "Sets text color to red",
       "origin": "Hywind",
-      "code": "color: rgb(70, 8, 9)",
+      "code": "color: #460809",
       "previewColor": {
         "r": 70,
         "g": 8,
@@ -5128,7 +5402,7 @@
       "className": "text-orange-50",
       "description": "Sets text color to orange",
       "origin": "Hywind",
-      "code": "color: rgb(255, 247, 237)",
+      "code": "color: #fff7ed",
       "previewColor": {
         "r": 255,
         "g": 247,
@@ -5139,7 +5413,7 @@
       "className": "text-orange-100",
       "description": "Sets text color to orange",
       "origin": "Hywind",
-      "code": "color: rgb(255, 237, 212)",
+      "code": "color: #ffedd4",
       "previewColor": {
         "r": 255,
         "g": 237,
@@ -5150,7 +5424,7 @@
       "className": "text-orange-200",
       "description": "Sets text color to orange",
       "origin": "Hywind",
-      "code": "color: rgb(255, 214, 167)",
+      "code": "color: #ffd6a7",
       "previewColor": {
         "r": 255,
         "g": 214,
@@ -5161,7 +5435,7 @@
       "className": "text-orange-300",
       "description": "Sets text color to orange",
       "origin": "Hywind",
-      "code": "color: rgb(255, 184, 106)",
+      "code": "color: #ffb86a",
       "previewColor": {
         "r": 255,
         "g": 184,
@@ -5172,7 +5446,7 @@
       "className": "text-orange-400",
       "description": "Sets text color to orange",
       "origin": "Hywind",
-      "code": "color: rgb(255, 137, 4)",
+      "code": "color: #ff8904",
       "previewColor": {
         "r": 255,
         "g": 137,
@@ -5183,7 +5457,7 @@
       "className": "text-orange-500",
       "description": "Sets text color to orange",
       "origin": "Hywind",
-      "code": "color: rgb(255, 105, 0)",
+      "code": "color: #ff6900",
       "previewColor": {
         "r": 255,
         "g": 105,
@@ -5194,7 +5468,7 @@
       "className": "text-orange-600",
       "description": "Sets text color to orange",
       "origin": "Hywind",
-      "code": "color: rgb(245, 73, 0)",
+      "code": "color: #f54900",
       "previewColor": {
         "r": 245,
         "g": 73,
@@ -5205,7 +5479,7 @@
       "className": "text-orange-700",
       "description": "Sets text color to orange",
       "origin": "Hywind",
-      "code": "color: rgb(202, 53, 0)",
+      "code": "color: #ca3500",
       "previewColor": {
         "r": 202,
         "g": 53,
@@ -5216,7 +5490,7 @@
       "className": "text-orange-800",
       "description": "Sets text color to orange",
       "origin": "Hywind",
-      "code": "color: rgb(159, 45, 0)",
+      "code": "color: #9f2d00",
       "previewColor": {
         "r": 159,
         "g": 45,
@@ -5227,7 +5501,7 @@
       "className": "text-orange-900",
       "description": "Sets text color to orange",
       "origin": "Hywind",
-      "code": "color: rgb(126, 42, 12)",
+      "code": "color: #7e2a0c",
       "previewColor": {
         "r": 126,
         "g": 42,
@@ -5238,7 +5512,7 @@
       "className": "text-orange-950",
       "description": "Sets text color to orange",
       "origin": "Hywind",
-      "code": "color: rgb(68, 19, 6)",
+      "code": "color: #441306",
       "previewColor": {
         "r": 68,
         "g": 19,
@@ -5249,7 +5523,7 @@
       "className": "text-amber-50",
       "description": "Sets text color to amber",
       "origin": "Hywind",
-      "code": "color: rgb(255, 251, 235)",
+      "code": "color: #fffbeb",
       "previewColor": {
         "r": 255,
         "g": 251,
@@ -5260,7 +5534,7 @@
       "className": "text-amber-100",
       "description": "Sets text color to amber",
       "origin": "Hywind",
-      "code": "color: rgb(254, 243, 198)",
+      "code": "color: #fef3c6",
       "previewColor": {
         "r": 254,
         "g": 243,
@@ -5271,7 +5545,7 @@
       "className": "text-amber-200",
       "description": "Sets text color to amber",
       "origin": "Hywind",
-      "code": "color: rgb(254, 230, 133)",
+      "code": "color: #fee685",
       "previewColor": {
         "r": 254,
         "g": 230,
@@ -5282,7 +5556,7 @@
       "className": "text-amber-300",
       "description": "Sets text color to amber",
       "origin": "Hywind",
-      "code": "color: rgb(255, 210, 48)",
+      "code": "color: #ffd230",
       "previewColor": {
         "r": 255,
         "g": 210,
@@ -5293,7 +5567,7 @@
       "className": "text-amber-400",
       "description": "Sets text color to amber",
       "origin": "Hywind",
-      "code": "color: rgb(255, 185, 0)",
+      "code": "color: #ffb900",
       "previewColor": {
         "r": 255,
         "g": 185,
@@ -5304,7 +5578,7 @@
       "className": "text-amber-500",
       "description": "Sets text color to amber",
       "origin": "Hywind",
-      "code": "color: rgb(254, 154, 0)",
+      "code": "color: #fe9a00",
       "previewColor": {
         "r": 254,
         "g": 154,
@@ -5315,7 +5589,7 @@
       "className": "text-amber-600",
       "description": "Sets text color to amber",
       "origin": "Hywind",
-      "code": "color: rgb(225, 113, 0)",
+      "code": "color: #e17100",
       "previewColor": {
         "r": 225,
         "g": 113,
@@ -5326,7 +5600,7 @@
       "className": "text-amber-700",
       "description": "Sets text color to amber",
       "origin": "Hywind",
-      "code": "color: rgb(187, 77, 0)",
+      "code": "color: #bb4d00",
       "previewColor": {
         "r": 187,
         "g": 77,
@@ -5337,7 +5611,7 @@
       "className": "text-amber-800",
       "description": "Sets text color to amber",
       "origin": "Hywind",
-      "code": "color: rgb(151, 60, 0)",
+      "code": "color: #973c00",
       "previewColor": {
         "r": 151,
         "g": 60,
@@ -5348,7 +5622,7 @@
       "className": "text-amber-900",
       "description": "Sets text color to amber",
       "origin": "Hywind",
-      "code": "color: rgb(123, 51, 6)",
+      "code": "color: #7b3306",
       "previewColor": {
         "r": 123,
         "g": 51,
@@ -5359,7 +5633,7 @@
       "className": "text-amber-950",
       "description": "Sets text color to amber",
       "origin": "Hywind",
-      "code": "color: rgb(70, 25, 1)",
+      "code": "color: #461901",
       "previewColor": {
         "r": 70,
         "g": 25,
@@ -5370,7 +5644,7 @@
       "className": "text-yellow-50",
       "description": "Sets text color to yellow",
       "origin": "Hywind",
-      "code": "color: rgb(254, 252, 232)",
+      "code": "color: #fefce8",
       "previewColor": {
         "r": 254,
         "g": 252,
@@ -5381,7 +5655,7 @@
       "className": "text-yellow-100",
       "description": "Sets text color to yellow",
       "origin": "Hywind",
-      "code": "color: rgb(254, 249, 194)",
+      "code": "color: #fef9c2",
       "previewColor": {
         "r": 254,
         "g": 249,
@@ -5392,7 +5666,7 @@
       "className": "text-yellow-200",
       "description": "Sets text color to yellow",
       "origin": "Hywind",
-      "code": "color: rgb(255, 240, 133)",
+      "code": "color: #fff085",
       "previewColor": {
         "r": 255,
         "g": 240,
@@ -5403,7 +5677,7 @@
       "className": "text-yellow-300",
       "description": "Sets text color to yellow",
       "origin": "Hywind",
-      "code": "color: rgb(255, 223, 32)",
+      "code": "color: #ffdf20",
       "previewColor": {
         "r": 255,
         "g": 223,
@@ -5414,7 +5688,7 @@
       "className": "text-yellow-400",
       "description": "Sets text color to yellow",
       "origin": "Hywind",
-      "code": "color: rgb(253, 199, 0)",
+      "code": "color: #fdc700",
       "previewColor": {
         "r": 253,
         "g": 199,
@@ -5425,7 +5699,7 @@
       "className": "text-yellow-500",
       "description": "Sets text color to yellow",
       "origin": "Hywind",
-      "code": "color: rgb(240, 177, 0)",
+      "code": "color: #f0b100",
       "previewColor": {
         "r": 240,
         "g": 177,
@@ -5436,7 +5710,7 @@
       "className": "text-yellow-600",
       "description": "Sets text color to yellow",
       "origin": "Hywind",
-      "code": "color: rgb(208, 135, 0)",
+      "code": "color: #d08700",
       "previewColor": {
         "r": 208,
         "g": 135,
@@ -5447,7 +5721,7 @@
       "className": "text-yellow-700",
       "description": "Sets text color to yellow",
       "origin": "Hywind",
-      "code": "color: rgb(166, 95, 0)",
+      "code": "color: #a65f00",
       "previewColor": {
         "r": 166,
         "g": 95,
@@ -5458,7 +5732,7 @@
       "className": "text-yellow-800",
       "description": "Sets text color to yellow",
       "origin": "Hywind",
-      "code": "color: rgb(137, 75, 0)",
+      "code": "color: #894b00",
       "previewColor": {
         "r": 137,
         "g": 75,
@@ -5469,7 +5743,7 @@
       "className": "text-yellow-900",
       "description": "Sets text color to yellow",
       "origin": "Hywind",
-      "code": "color: rgb(115, 62, 10)",
+      "code": "color: #733e0a",
       "previewColor": {
         "r": 115,
         "g": 62,
@@ -5480,7 +5754,7 @@
       "className": "text-yellow-950",
       "description": "Sets text color to yellow",
       "origin": "Hywind",
-      "code": "color: rgb(67, 32, 4)",
+      "code": "color: #432004",
       "previewColor": {
         "r": 67,
         "g": 32,
@@ -5491,7 +5765,7 @@
       "className": "text-lime-50",
       "description": "Sets text color to lime",
       "origin": "Hywind",
-      "code": "color: rgb(247, 254, 231)",
+      "code": "color: #f7fee7",
       "previewColor": {
         "r": 247,
         "g": 254,
@@ -5502,7 +5776,7 @@
       "className": "text-lime-100",
       "description": "Sets text color to lime",
       "origin": "Hywind",
-      "code": "color: rgb(236, 252, 202)",
+      "code": "color: #ecfcca",
       "previewColor": {
         "r": 236,
         "g": 252,
@@ -5513,7 +5787,7 @@
       "className": "text-lime-200",
       "description": "Sets text color to lime",
       "origin": "Hywind",
-      "code": "color: rgb(216, 249, 153)",
+      "code": "color: #d8f999",
       "previewColor": {
         "r": 216,
         "g": 249,
@@ -5524,7 +5798,7 @@
       "className": "text-lime-300",
       "description": "Sets text color to lime",
       "origin": "Hywind",
-      "code": "color: rgb(187, 244, 81)",
+      "code": "color: #bbf451",
       "previewColor": {
         "r": 187,
         "g": 244,
@@ -5535,7 +5809,7 @@
       "className": "text-lime-400",
       "description": "Sets text color to lime",
       "origin": "Hywind",
-      "code": "color: rgb(154, 230, 0)",
+      "code": "color: #9ae600",
       "previewColor": {
         "r": 154,
         "g": 230,
@@ -5546,7 +5820,7 @@
       "className": "text-lime-500",
       "description": "Sets text color to lime",
       "origin": "Hywind",
-      "code": "color: rgb(124, 207, 0)",
+      "code": "color: #7ccf00",
       "previewColor": {
         "r": 124,
         "g": 207,
@@ -5557,7 +5831,7 @@
       "className": "text-lime-600",
       "description": "Sets text color to lime",
       "origin": "Hywind",
-      "code": "color: rgb(94, 165, 0)",
+      "code": "color: #5ea500",
       "previewColor": {
         "r": 94,
         "g": 165,
@@ -5568,7 +5842,7 @@
       "className": "text-lime-700",
       "description": "Sets text color to lime",
       "origin": "Hywind",
-      "code": "color: rgb(73, 125, 0)",
+      "code": "color: #497d00",
       "previewColor": {
         "r": 73,
         "g": 125,
@@ -5579,7 +5853,7 @@
       "className": "text-lime-800",
       "description": "Sets text color to lime",
       "origin": "Hywind",
-      "code": "color: rgb(60, 99, 0)",
+      "code": "color: #3c6300",
       "previewColor": {
         "r": 60,
         "g": 99,
@@ -5590,7 +5864,7 @@
       "className": "text-lime-900",
       "description": "Sets text color to lime",
       "origin": "Hywind",
-      "code": "color: rgb(53, 83, 14)",
+      "code": "color: #35530e",
       "previewColor": {
         "r": 53,
         "g": 83,
@@ -5601,7 +5875,7 @@
       "className": "text-lime-950",
       "description": "Sets text color to lime",
       "origin": "Hywind",
-      "code": "color: rgb(25, 46, 3)",
+      "code": "color: #192e03",
       "previewColor": {
         "r": 25,
         "g": 46,
@@ -5612,7 +5886,7 @@
       "className": "text-green-50",
       "description": "Sets text color to green",
       "origin": "Hywind",
-      "code": "color: rgb(240, 253, 244)",
+      "code": "color: #f0fdf4",
       "previewColor": {
         "r": 240,
         "g": 253,
@@ -5623,7 +5897,7 @@
       "className": "text-green-100",
       "description": "Sets text color to green",
       "origin": "Hywind",
-      "code": "color: rgb(220, 252, 231)",
+      "code": "color: #dcfce7",
       "previewColor": {
         "r": 220,
         "g": 252,
@@ -5634,7 +5908,7 @@
       "className": "text-green-200",
       "description": "Sets text color to green",
       "origin": "Hywind",
-      "code": "color: rgb(185, 248, 207)",
+      "code": "color: #b9f8cf",
       "previewColor": {
         "r": 185,
         "g": 248,
@@ -5645,7 +5919,7 @@
       "className": "text-green-300",
       "description": "Sets text color to green",
       "origin": "Hywind",
-      "code": "color: rgb(123, 241, 168)",
+      "code": "color: #7bf1a8",
       "previewColor": {
         "r": 123,
         "g": 241,
@@ -5656,7 +5930,7 @@
       "className": "text-green-400",
       "description": "Sets text color to green",
       "origin": "Hywind",
-      "code": "color: rgb(5, 223, 114)",
+      "code": "color: #05df72",
       "previewColor": {
         "r": 5,
         "g": 223,
@@ -5667,7 +5941,7 @@
       "className": "text-green-500",
       "description": "Sets text color to green",
       "origin": "Hywind",
-      "code": "color: rgb(0, 201, 80)",
+      "code": "color: #00c950",
       "previewColor": {
         "r": 0,
         "g": 201,
@@ -5678,7 +5952,7 @@
       "className": "text-green-600",
       "description": "Sets text color to green",
       "origin": "Hywind",
-      "code": "color: rgb(0, 166, 62)",
+      "code": "color: #00a63e",
       "previewColor": {
         "r": 0,
         "g": 166,
@@ -5689,7 +5963,7 @@
       "className": "text-green-700",
       "description": "Sets text color to green",
       "origin": "Hywind",
-      "code": "color: rgb(0, 130, 54)",
+      "code": "color: #008236",
       "previewColor": {
         "r": 0,
         "g": 130,
@@ -5700,7 +5974,7 @@
       "className": "text-green-800",
       "description": "Sets text color to green",
       "origin": "Hywind",
-      "code": "color: rgb(1, 102, 48)",
+      "code": "color: #016630",
       "previewColor": {
         "r": 1,
         "g": 102,
@@ -5711,7 +5985,7 @@
       "className": "text-green-900",
       "description": "Sets text color to green",
       "origin": "Hywind",
-      "code": "color: rgb(13, 84, 43)",
+      "code": "color: #0d542b",
       "previewColor": {
         "r": 13,
         "g": 84,
@@ -5722,7 +5996,7 @@
       "className": "text-green-950",
       "description": "Sets text color to green",
       "origin": "Hywind",
-      "code": "color: rgb(3, 46, 21)",
+      "code": "color: #032e15",
       "previewColor": {
         "r": 3,
         "g": 46,
@@ -5733,7 +6007,7 @@
       "className": "text-emerald-50",
       "description": "Sets text color to emerald",
       "origin": "Hywind",
-      "code": "color: rgb(236, 253, 245)",
+      "code": "color: #ecfdf5",
       "previewColor": {
         "r": 236,
         "g": 253,
@@ -5744,7 +6018,7 @@
       "className": "text-emerald-100",
       "description": "Sets text color to emerald",
       "origin": "Hywind",
-      "code": "color: rgb(208, 250, 229)",
+      "code": "color: #d0fae5",
       "previewColor": {
         "r": 208,
         "g": 250,
@@ -5755,7 +6029,7 @@
       "className": "text-emerald-200",
       "description": "Sets text color to emerald",
       "origin": "Hywind",
-      "code": "color: rgb(164, 244, 207)",
+      "code": "color: #a4f4cf",
       "previewColor": {
         "r": 164,
         "g": 244,
@@ -5766,7 +6040,7 @@
       "className": "text-emerald-300",
       "description": "Sets text color to emerald",
       "origin": "Hywind",
-      "code": "color: rgb(94, 233, 181)",
+      "code": "color: #5ee9b5",
       "previewColor": {
         "r": 94,
         "g": 233,
@@ -5777,7 +6051,7 @@
       "className": "text-emerald-400",
       "description": "Sets text color to emerald",
       "origin": "Hywind",
-      "code": "color: rgb(0, 212, 146)",
+      "code": "color: #00d492",
       "previewColor": {
         "r": 0,
         "g": 212,
@@ -5788,7 +6062,7 @@
       "className": "text-emerald-500",
       "description": "Sets text color to emerald",
       "origin": "Hywind",
-      "code": "color: rgb(0, 188, 125)",
+      "code": "color: #00bc7d",
       "previewColor": {
         "r": 0,
         "g": 188,
@@ -5799,7 +6073,7 @@
       "className": "text-emerald-600",
       "description": "Sets text color to emerald",
       "origin": "Hywind",
-      "code": "color: rgb(0, 153, 102)",
+      "code": "color: #009966",
       "previewColor": {
         "r": 0,
         "g": 153,
@@ -5810,7 +6084,7 @@
       "className": "text-emerald-700",
       "description": "Sets text color to emerald",
       "origin": "Hywind",
-      "code": "color: rgb(0, 122, 85)",
+      "code": "color: #007a55",
       "previewColor": {
         "r": 0,
         "g": 122,
@@ -5821,7 +6095,7 @@
       "className": "text-emerald-800",
       "description": "Sets text color to emerald",
       "origin": "Hywind",
-      "code": "color: rgb(0, 96, 69)",
+      "code": "color: #006045",
       "previewColor": {
         "r": 0,
         "g": 96,
@@ -5832,7 +6106,7 @@
       "className": "text-emerald-900",
       "description": "Sets text color to emerald",
       "origin": "Hywind",
-      "code": "color: rgb(0, 79, 59)",
+      "code": "color: #004f3b",
       "previewColor": {
         "r": 0,
         "g": 79,
@@ -5843,7 +6117,7 @@
       "className": "text-emerald-950",
       "description": "Sets text color to emerald",
       "origin": "Hywind",
-      "code": "color: rgb(0, 44, 34)",
+      "code": "color: #002c22",
       "previewColor": {
         "r": 0,
         "g": 44,
@@ -5854,7 +6128,7 @@
       "className": "text-teal-50",
       "description": "Sets text color to teal",
       "origin": "Hywind",
-      "code": "color: rgb(240, 253, 250)",
+      "code": "color: #f0fdfa",
       "previewColor": {
         "r": 240,
         "g": 253,
@@ -5865,7 +6139,7 @@
       "className": "text-teal-100",
       "description": "Sets text color to teal",
       "origin": "Hywind",
-      "code": "color: rgb(203, 251, 241)",
+      "code": "color: #cbfbf1",
       "previewColor": {
         "r": 203,
         "g": 251,
@@ -5876,7 +6150,7 @@
       "className": "text-teal-200",
       "description": "Sets text color to teal",
       "origin": "Hywind",
-      "code": "color: rgb(150, 247, 228)",
+      "code": "color: #96f7e4",
       "previewColor": {
         "r": 150,
         "g": 247,
@@ -5887,7 +6161,7 @@
       "className": "text-teal-300",
       "description": "Sets text color to teal",
       "origin": "Hywind",
-      "code": "color: rgb(70, 236, 213)",
+      "code": "color: #46ecd5",
       "previewColor": {
         "r": 70,
         "g": 236,
@@ -5898,7 +6172,7 @@
       "className": "text-teal-400",
       "description": "Sets text color to teal",
       "origin": "Hywind",
-      "code": "color: rgb(0, 213, 190)",
+      "code": "color: #00d5be",
       "previewColor": {
         "r": 0,
         "g": 213,
@@ -5909,7 +6183,7 @@
       "className": "text-teal-500",
       "description": "Sets text color to teal",
       "origin": "Hywind",
-      "code": "color: rgb(0, 187, 167)",
+      "code": "color: #00bba7",
       "previewColor": {
         "r": 0,
         "g": 187,
@@ -5920,7 +6194,7 @@
       "className": "text-teal-600",
       "description": "Sets text color to teal",
       "origin": "Hywind",
-      "code": "color: rgb(0, 150, 137)",
+      "code": "color: #009689",
       "previewColor": {
         "r": 0,
         "g": 150,
@@ -5931,7 +6205,7 @@
       "className": "text-teal-700",
       "description": "Sets text color to teal",
       "origin": "Hywind",
-      "code": "color: rgb(0, 120, 111)",
+      "code": "color: #00786f",
       "previewColor": {
         "r": 0,
         "g": 120,
@@ -5942,7 +6216,7 @@
       "className": "text-teal-800",
       "description": "Sets text color to teal",
       "origin": "Hywind",
-      "code": "color: rgb(0, 95, 90)",
+      "code": "color: #005f5a",
       "previewColor": {
         "r": 0,
         "g": 95,
@@ -5953,7 +6227,7 @@
       "className": "text-teal-900",
       "description": "Sets text color to teal",
       "origin": "Hywind",
-      "code": "color: rgb(11, 79, 74)",
+      "code": "color: #0b4f4a",
       "previewColor": {
         "r": 11,
         "g": 79,
@@ -5964,7 +6238,7 @@
       "className": "text-teal-950",
       "description": "Sets text color to teal",
       "origin": "Hywind",
-      "code": "color: rgb(2, 47, 46)",
+      "code": "color: #022f2e",
       "previewColor": {
         "r": 2,
         "g": 47,
@@ -5975,7 +6249,7 @@
       "className": "text-cyan-50",
       "description": "Sets text color to cyan",
       "origin": "Hywind",
-      "code": "color: rgb(236, 254, 255)",
+      "code": "color: #ecfeff",
       "previewColor": {
         "r": 236,
         "g": 254,
@@ -5986,7 +6260,7 @@
       "className": "text-cyan-100",
       "description": "Sets text color to cyan",
       "origin": "Hywind",
-      "code": "color: rgb(206, 250, 254)",
+      "code": "color: #cefafe",
       "previewColor": {
         "r": 206,
         "g": 250,
@@ -5997,7 +6271,7 @@
       "className": "text-cyan-200",
       "description": "Sets text color to cyan",
       "origin": "Hywind",
-      "code": "color: rgb(162, 244, 253)",
+      "code": "color: #a2f4fd",
       "previewColor": {
         "r": 162,
         "g": 244,
@@ -6008,7 +6282,7 @@
       "className": "text-cyan-300",
       "description": "Sets text color to cyan",
       "origin": "Hywind",
-      "code": "color: rgb(83, 234, 253)",
+      "code": "color: #53eafd",
       "previewColor": {
         "r": 83,
         "g": 234,
@@ -6019,7 +6293,7 @@
       "className": "text-cyan-400",
       "description": "Sets text color to cyan",
       "origin": "Hywind",
-      "code": "color: rgb(0, 211, 242)",
+      "code": "color: #00d3f2",
       "previewColor": {
         "r": 0,
         "g": 211,
@@ -6030,7 +6304,7 @@
       "className": "text-cyan-500",
       "description": "Sets text color to cyan",
       "origin": "Hywind",
-      "code": "color: rgb(0, 184, 219)",
+      "code": "color: #00b8db",
       "previewColor": {
         "r": 0,
         "g": 184,
@@ -6041,7 +6315,7 @@
       "className": "text-cyan-600",
       "description": "Sets text color to cyan",
       "origin": "Hywind",
-      "code": "color: rgb(0, 146, 184)",
+      "code": "color: #0092b8",
       "previewColor": {
         "r": 0,
         "g": 146,
@@ -6052,7 +6326,7 @@
       "className": "text-cyan-700",
       "description": "Sets text color to cyan",
       "origin": "Hywind",
-      "code": "color: rgb(0, 117, 149)",
+      "code": "color: #007595",
       "previewColor": {
         "r": 0,
         "g": 117,
@@ -6063,7 +6337,7 @@
       "className": "text-cyan-800",
       "description": "Sets text color to cyan",
       "origin": "Hywind",
-      "code": "color: rgb(0, 95, 120)",
+      "code": "color: #005f78",
       "previewColor": {
         "r": 0,
         "g": 95,
@@ -6074,7 +6348,7 @@
       "className": "text-cyan-900",
       "description": "Sets text color to cyan",
       "origin": "Hywind",
-      "code": "color: rgb(16, 78, 100)",
+      "code": "color: #104e64",
       "previewColor": {
         "r": 16,
         "g": 78,
@@ -6085,7 +6359,7 @@
       "className": "text-cyan-950",
       "description": "Sets text color to cyan",
       "origin": "Hywind",
-      "code": "color: rgb(5, 51, 69)",
+      "code": "color: #053345",
       "previewColor": {
         "r": 5,
         "g": 51,
@@ -6096,7 +6370,7 @@
       "className": "text-sky-50",
       "description": "Sets text color to sky",
       "origin": "Hywind",
-      "code": "color: rgb(240, 249, 255)",
+      "code": "color: #f0f9ff",
       "previewColor": {
         "r": 240,
         "g": 249,
@@ -6107,7 +6381,7 @@
       "className": "text-sky-100",
       "description": "Sets text color to sky",
       "origin": "Hywind",
-      "code": "color: rgb(223, 242, 254)",
+      "code": "color: #dff2fe",
       "previewColor": {
         "r": 223,
         "g": 242,
@@ -6118,7 +6392,7 @@
       "className": "text-sky-200",
       "description": "Sets text color to sky",
       "origin": "Hywind",
-      "code": "color: rgb(184, 230, 254)",
+      "code": "color: #b8e6fe",
       "previewColor": {
         "r": 184,
         "g": 230,
@@ -6129,7 +6403,7 @@
       "className": "text-sky-300",
       "description": "Sets text color to sky",
       "origin": "Hywind",
-      "code": "color: rgb(116, 212, 255)",
+      "code": "color: #74d4ff",
       "previewColor": {
         "r": 116,
         "g": 212,
@@ -6140,7 +6414,7 @@
       "className": "text-sky-400",
       "description": "Sets text color to sky",
       "origin": "Hywind",
-      "code": "color: rgb(0, 188, 255)",
+      "code": "color: #00bcff",
       "previewColor": {
         "r": 0,
         "g": 188,
@@ -6151,7 +6425,7 @@
       "className": "text-sky-500",
       "description": "Sets text color to sky",
       "origin": "Hywind",
-      "code": "color: rgb(0, 166, 244)",
+      "code": "color: #00a6f4",
       "previewColor": {
         "r": 0,
         "g": 166,
@@ -6162,7 +6436,7 @@
       "className": "text-sky-600",
       "description": "Sets text color to sky",
       "origin": "Hywind",
-      "code": "color: rgb(0, 132, 209)",
+      "code": "color: #0084d1",
       "previewColor": {
         "r": 0,
         "g": 132,
@@ -6173,7 +6447,7 @@
       "className": "text-sky-700",
       "description": "Sets text color to sky",
       "origin": "Hywind",
-      "code": "color: rgb(0, 105, 168)",
+      "code": "color: #0069a8",
       "previewColor": {
         "r": 0,
         "g": 105,
@@ -6184,7 +6458,7 @@
       "className": "text-sky-800",
       "description": "Sets text color to sky",
       "origin": "Hywind",
-      "code": "color: rgb(0, 89, 138)",
+      "code": "color: #00598a",
       "previewColor": {
         "r": 0,
         "g": 89,
@@ -6195,7 +6469,7 @@
       "className": "text-sky-900",
       "description": "Sets text color to sky",
       "origin": "Hywind",
-      "code": "color: rgb(2, 74, 112)",
+      "code": "color: #024a70",
       "previewColor": {
         "r": 2,
         "g": 74,
@@ -6206,7 +6480,7 @@
       "className": "text-sky-950",
       "description": "Sets text color to sky",
       "origin": "Hywind",
-      "code": "color: rgb(5, 47, 74)",
+      "code": "color: #052f4a",
       "previewColor": {
         "r": 5,
         "g": 47,
@@ -6217,7 +6491,7 @@
       "className": "text-blue-50",
       "description": "Sets text color to blue",
       "origin": "Hywind",
-      "code": "color: rgb(239, 246, 255)",
+      "code": "color: #eff6ff",
       "previewColor": {
         "r": 239,
         "g": 246,
@@ -6228,7 +6502,7 @@
       "className": "text-blue-100",
       "description": "Sets text color to blue",
       "origin": "Hywind",
-      "code": "color: rgb(219, 234, 254)",
+      "code": "color: #dbeafe",
       "previewColor": {
         "r": 219,
         "g": 234,
@@ -6239,7 +6513,7 @@
       "className": "text-blue-200",
       "description": "Sets text color to blue",
       "origin": "Hywind",
-      "code": "color: rgb(190, 219, 255)",
+      "code": "color: #bedbff",
       "previewColor": {
         "r": 190,
         "g": 219,
@@ -6250,7 +6524,7 @@
       "className": "text-blue-300",
       "description": "Sets text color to blue",
       "origin": "Hywind",
-      "code": "color: rgb(142, 197, 255)",
+      "code": "color: #8ec5ff",
       "previewColor": {
         "r": 142,
         "g": 197,
@@ -6261,7 +6535,7 @@
       "className": "text-blue-400",
       "description": "Sets text color to blue",
       "origin": "Hywind",
-      "code": "color: rgb(81, 162, 255)",
+      "code": "color: #51a2ff",
       "previewColor": {
         "r": 81,
         "g": 162,
@@ -6272,7 +6546,7 @@
       "className": "text-blue-500",
       "description": "Sets text color to blue",
       "origin": "Hywind",
-      "code": "color: rgb(43, 127, 255)",
+      "code": "color: #2b7fff",
       "previewColor": {
         "r": 43,
         "g": 127,
@@ -6283,7 +6557,7 @@
       "className": "text-blue-600",
       "description": "Sets text color to blue",
       "origin": "Hywind",
-      "code": "color: rgb(21, 93, 252)",
+      "code": "color: #155dfc",
       "previewColor": {
         "r": 21,
         "g": 93,
@@ -6294,7 +6568,7 @@
       "className": "text-blue-700",
       "description": "Sets text color to blue",
       "origin": "Hywind",
-      "code": "color: rgb(20, 71, 230)",
+      "code": "color: #1447e6",
       "previewColor": {
         "r": 20,
         "g": 71,
@@ -6305,7 +6579,7 @@
       "className": "text-blue-800",
       "description": "Sets text color to blue",
       "origin": "Hywind",
-      "code": "color: rgb(25, 60, 184)",
+      "code": "color: #193cb8",
       "previewColor": {
         "r": 25,
         "g": 60,
@@ -6316,7 +6590,7 @@
       "className": "text-blue-900",
       "description": "Sets text color to blue",
       "origin": "Hywind",
-      "code": "color: rgb(28, 57, 142)",
+      "code": "color: #1c398e",
       "previewColor": {
         "r": 28,
         "g": 57,
@@ -6327,7 +6601,7 @@
       "className": "text-blue-950",
       "description": "Sets text color to blue",
       "origin": "Hywind",
-      "code": "color: rgb(22, 36, 86)",
+      "code": "color: #162456",
       "previewColor": {
         "r": 22,
         "g": 36,
@@ -6338,7 +6612,7 @@
       "className": "text-indigo-50",
       "description": "Sets text color to indigo",
       "origin": "Hywind",
-      "code": "color: rgb(238, 242, 255)",
+      "code": "color: #eef2ff",
       "previewColor": {
         "r": 238,
         "g": 242,
@@ -6349,7 +6623,7 @@
       "className": "text-indigo-100",
       "description": "Sets text color to indigo",
       "origin": "Hywind",
-      "code": "color: rgb(224, 231, 255)",
+      "code": "color: #e0e7ff",
       "previewColor": {
         "r": 224,
         "g": 231,
@@ -6360,7 +6634,7 @@
       "className": "text-indigo-200",
       "description": "Sets text color to indigo",
       "origin": "Hywind",
-      "code": "color: rgb(198, 210, 255)",
+      "code": "color: #c6d2ff",
       "previewColor": {
         "r": 198,
         "g": 210,
@@ -6371,7 +6645,7 @@
       "className": "text-indigo-300",
       "description": "Sets text color to indigo",
       "origin": "Hywind",
-      "code": "color: rgb(163, 179, 255)",
+      "code": "color: #a3b3ff",
       "previewColor": {
         "r": 163,
         "g": 179,
@@ -6382,7 +6656,7 @@
       "className": "text-indigo-400",
       "description": "Sets text color to indigo",
       "origin": "Hywind",
-      "code": "color: rgb(124, 134, 255)",
+      "code": "color: #7c86ff",
       "previewColor": {
         "r": 124,
         "g": 134,
@@ -6393,7 +6667,7 @@
       "className": "text-indigo-500",
       "description": "Sets text color to indigo",
       "origin": "Hywind",
-      "code": "color: rgb(97, 95, 255)",
+      "code": "color: #615fff",
       "previewColor": {
         "r": 97,
         "g": 95,
@@ -6404,7 +6678,7 @@
       "className": "text-indigo-600",
       "description": "Sets text color to indigo",
       "origin": "Hywind",
-      "code": "color: rgb(79, 57, 246)",
+      "code": "color: #4f39f6",
       "previewColor": {
         "r": 79,
         "g": 57,
@@ -6415,7 +6689,7 @@
       "className": "text-indigo-700",
       "description": "Sets text color to indigo",
       "origin": "Hywind",
-      "code": "color: rgb(67, 45, 215)",
+      "code": "color: #432dd7",
       "previewColor": {
         "r": 67,
         "g": 45,
@@ -6426,7 +6700,7 @@
       "className": "text-indigo-800",
       "description": "Sets text color to indigo",
       "origin": "Hywind",
-      "code": "color: rgb(55, 42, 172)",
+      "code": "color: #372aac",
       "previewColor": {
         "r": 55,
         "g": 42,
@@ -6437,7 +6711,7 @@
       "className": "text-indigo-900",
       "description": "Sets text color to indigo",
       "origin": "Hywind",
-      "code": "color: rgb(49, 44, 133)",
+      "code": "color: #312c85",
       "previewColor": {
         "r": 49,
         "g": 44,
@@ -6448,7 +6722,7 @@
       "className": "text-indigo-950",
       "description": "Sets text color to indigo",
       "origin": "Hywind",
-      "code": "color: rgb(30, 26, 77)",
+      "code": "color: #1e1a4d",
       "previewColor": {
         "r": 30,
         "g": 26,
@@ -6459,7 +6733,7 @@
       "className": "text-violet-50",
       "description": "Sets text color to violet",
       "origin": "Hywind",
-      "code": "color: rgb(245, 243, 255)",
+      "code": "color: #f5f3ff",
       "previewColor": {
         "r": 245,
         "g": 243,
@@ -6470,7 +6744,7 @@
       "className": "text-violet-100",
       "description": "Sets text color to violet",
       "origin": "Hywind",
-      "code": "color: rgb(237, 233, 254)",
+      "code": "color: #ede9fe",
       "previewColor": {
         "r": 237,
         "g": 233,
@@ -6481,7 +6755,7 @@
       "className": "text-violet-200",
       "description": "Sets text color to violet",
       "origin": "Hywind",
-      "code": "color: rgb(221, 214, 255)",
+      "code": "color: #ddd6ff",
       "previewColor": {
         "r": 221,
         "g": 214,
@@ -6492,7 +6766,7 @@
       "className": "text-violet-300",
       "description": "Sets text color to violet",
       "origin": "Hywind",
-      "code": "color: rgb(196, 180, 255)",
+      "code": "color: #c4b4ff",
       "previewColor": {
         "r": 196,
         "g": 180,
@@ -6503,7 +6777,7 @@
       "className": "text-violet-400",
       "description": "Sets text color to violet",
       "origin": "Hywind",
-      "code": "color: rgb(166, 132, 255)",
+      "code": "color: #a684ff",
       "previewColor": {
         "r": 166,
         "g": 132,
@@ -6514,7 +6788,7 @@
       "className": "text-violet-500",
       "description": "Sets text color to violet",
       "origin": "Hywind",
-      "code": "color: rgb(142, 81, 255)",
+      "code": "color: #8e51ff",
       "previewColor": {
         "r": 142,
         "g": 81,
@@ -6525,7 +6799,7 @@
       "className": "text-violet-600",
       "description": "Sets text color to violet",
       "origin": "Hywind",
-      "code": "color: rgb(127, 34, 254)",
+      "code": "color: #7f22fe",
       "previewColor": {
         "r": 127,
         "g": 34,
@@ -6536,7 +6810,7 @@
       "className": "text-violet-700",
       "description": "Sets text color to violet",
       "origin": "Hywind",
-      "code": "color: rgb(112, 8, 231)",
+      "code": "color: #7008e7",
       "previewColor": {
         "r": 112,
         "g": 8,
@@ -6547,7 +6821,7 @@
       "className": "text-violet-800",
       "description": "Sets text color to violet",
       "origin": "Hywind",
-      "code": "color: rgb(93, 14, 192)",
+      "code": "color: #5d0ec0",
       "previewColor": {
         "r": 93,
         "g": 14,
@@ -6558,7 +6832,7 @@
       "className": "text-violet-900",
       "description": "Sets text color to violet",
       "origin": "Hywind",
-      "code": "color: rgb(77, 23, 154)",
+      "code": "color: #4d179a",
       "previewColor": {
         "r": 77,
         "g": 23,
@@ -6569,7 +6843,7 @@
       "className": "text-violet-950",
       "description": "Sets text color to violet",
       "origin": "Hywind",
-      "code": "color: rgb(47, 13, 104)",
+      "code": "color: #2f0d68",
       "previewColor": {
         "r": 47,
         "g": 13,
@@ -6580,7 +6854,7 @@
       "className": "text-purple-50",
       "description": "Sets text color to purple",
       "origin": "Hywind",
-      "code": "color: rgb(250, 245, 255)",
+      "code": "color: #faf5ff",
       "previewColor": {
         "r": 250,
         "g": 245,
@@ -6591,7 +6865,7 @@
       "className": "text-purple-100",
       "description": "Sets text color to purple",
       "origin": "Hywind",
-      "code": "color: rgb(243, 232, 255)",
+      "code": "color: #f3e8ff",
       "previewColor": {
         "r": 243,
         "g": 232,
@@ -6602,7 +6876,7 @@
       "className": "text-purple-200",
       "description": "Sets text color to purple",
       "origin": "Hywind",
-      "code": "color: rgb(233, 212, 255)",
+      "code": "color: #e9d4ff",
       "previewColor": {
         "r": 233,
         "g": 212,
@@ -6613,7 +6887,7 @@
       "className": "text-purple-300",
       "description": "Sets text color to purple",
       "origin": "Hywind",
-      "code": "color: rgb(218, 178, 255)",
+      "code": "color: #dab2ff",
       "previewColor": {
         "r": 218,
         "g": 178,
@@ -6624,7 +6898,7 @@
       "className": "text-purple-400",
       "description": "Sets text color to purple",
       "origin": "Hywind",
-      "code": "color: rgb(194, 122, 255)",
+      "code": "color: #c27aff",
       "previewColor": {
         "r": 194,
         "g": 122,
@@ -6635,7 +6909,7 @@
       "className": "text-purple-500",
       "description": "Sets text color to purple",
       "origin": "Hywind",
-      "code": "color: rgb(173, 70, 255)",
+      "code": "color: #ad46ff",
       "previewColor": {
         "r": 173,
         "g": 70,
@@ -6646,7 +6920,7 @@
       "className": "text-purple-600",
       "description": "Sets text color to purple",
       "origin": "Hywind",
-      "code": "color: rgb(152, 16, 250)",
+      "code": "color: #9810fa",
       "previewColor": {
         "r": 152,
         "g": 16,
@@ -6657,7 +6931,7 @@
       "className": "text-purple-700",
       "description": "Sets text color to purple",
       "origin": "Hywind",
-      "code": "color: rgb(130, 0, 219)",
+      "code": "color: #8200db",
       "previewColor": {
         "r": 130,
         "g": 0,
@@ -6668,7 +6942,7 @@
       "className": "text-purple-800",
       "description": "Sets text color to purple",
       "origin": "Hywind",
-      "code": "color: rgb(110, 17, 176)",
+      "code": "color: #6e11b0",
       "previewColor": {
         "r": 110,
         "g": 17,
@@ -6679,7 +6953,7 @@
       "className": "text-purple-900",
       "description": "Sets text color to purple",
       "origin": "Hywind",
-      "code": "color: rgb(89, 22, 139)",
+      "code": "color: #59168b",
       "previewColor": {
         "r": 89,
         "g": 22,
@@ -6690,7 +6964,7 @@
       "className": "text-purple-950",
       "description": "Sets text color to purple",
       "origin": "Hywind",
-      "code": "color: rgb(60, 3, 102)",
+      "code": "color: #3c0366",
       "previewColor": {
         "r": 60,
         "g": 3,
@@ -6701,7 +6975,7 @@
       "className": "text-fuchsia-50",
       "description": "Sets text color to fuchsia",
       "origin": "Hywind",
-      "code": "color: rgb(253, 244, 255)",
+      "code": "color: #fdf4ff",
       "previewColor": {
         "r": 253,
         "g": 244,
@@ -6712,7 +6986,7 @@
       "className": "text-fuchsia-100",
       "description": "Sets text color to fuchsia",
       "origin": "Hywind",
-      "code": "color: rgb(250, 232, 255)",
+      "code": "color: #fae8ff",
       "previewColor": {
         "r": 250,
         "g": 232,
@@ -6723,7 +6997,7 @@
       "className": "text-fuchsia-200",
       "description": "Sets text color to fuchsia",
       "origin": "Hywind",
-      "code": "color: rgb(246, 207, 255)",
+      "code": "color: #f6cfff",
       "previewColor": {
         "r": 246,
         "g": 207,
@@ -6734,7 +7008,7 @@
       "className": "text-fuchsia-300",
       "description": "Sets text color to fuchsia",
       "origin": "Hywind",
-      "code": "color: rgb(244, 168, 255)",
+      "code": "color: #f4a8ff",
       "previewColor": {
         "r": 244,
         "g": 168,
@@ -6745,7 +7019,7 @@
       "className": "text-fuchsia-400",
       "description": "Sets text color to fuchsia",
       "origin": "Hywind",
-      "code": "color: rgb(237, 106, 255)",
+      "code": "color: #ed6aff",
       "previewColor": {
         "r": 237,
         "g": 106,
@@ -6756,7 +7030,7 @@
       "className": "text-fuchsia-500",
       "description": "Sets text color to fuchsia",
       "origin": "Hywind",
-      "code": "color: rgb(225, 42, 251)",
+      "code": "color: #e12afb",
       "previewColor": {
         "r": 225,
         "g": 42,
@@ -6767,7 +7041,7 @@
       "className": "text-fuchsia-600",
       "description": "Sets text color to fuchsia",
       "origin": "Hywind",
-      "code": "color: rgb(200, 0, 222)",
+      "code": "color: #c800de",
       "previewColor": {
         "r": 200,
         "g": 0,
@@ -6778,7 +7052,7 @@
       "className": "text-fuchsia-700",
       "description": "Sets text color to fuchsia",
       "origin": "Hywind",
-      "code": "color: rgb(168, 0, 183)",
+      "code": "color: #a800b7",
       "previewColor": {
         "r": 168,
         "g": 0,
@@ -6789,7 +7063,7 @@
       "className": "text-fuchsia-800",
       "description": "Sets text color to fuchsia",
       "origin": "Hywind",
-      "code": "color: rgb(138, 1, 148)",
+      "code": "color: #8a0194",
       "previewColor": {
         "r": 138,
         "g": 1,
@@ -6800,7 +7074,7 @@
       "className": "text-fuchsia-900",
       "description": "Sets text color to fuchsia",
       "origin": "Hywind",
-      "code": "color: rgb(114, 19, 120)",
+      "code": "color: #721378",
       "previewColor": {
         "r": 114,
         "g": 19,
@@ -6811,7 +7085,7 @@
       "className": "text-fuchsia-950",
       "description": "Sets text color to fuchsia",
       "origin": "Hywind",
-      "code": "color: rgb(75, 0, 79)",
+      "code": "color: #4b004f",
       "previewColor": {
         "r": 75,
         "g": 0,
@@ -6822,7 +7096,7 @@
       "className": "text-pink-50",
       "description": "Sets text color to pink",
       "origin": "Hywind",
-      "code": "color: rgb(253, 242, 248)",
+      "code": "color: #fdf2f8",
       "previewColor": {
         "r": 253,
         "g": 242,
@@ -6833,7 +7107,7 @@
       "className": "text-pink-100",
       "description": "Sets text color to pink",
       "origin": "Hywind",
-      "code": "color: rgb(252, 231, 243)",
+      "code": "color: #fce7f3",
       "previewColor": {
         "r": 252,
         "g": 231,
@@ -6844,7 +7118,7 @@
       "className": "text-pink-200",
       "description": "Sets text color to pink",
       "origin": "Hywind",
-      "code": "color: rgb(252, 206, 232)",
+      "code": "color: #fccee8",
       "previewColor": {
         "r": 252,
         "g": 206,
@@ -6855,7 +7129,7 @@
       "className": "text-pink-300",
       "description": "Sets text color to pink",
       "origin": "Hywind",
-      "code": "color: rgb(253, 165, 213)",
+      "code": "color: #fda5d5",
       "previewColor": {
         "r": 253,
         "g": 165,
@@ -6866,7 +7140,7 @@
       "className": "text-pink-400",
       "description": "Sets text color to pink",
       "origin": "Hywind",
-      "code": "color: rgb(251, 100, 182)",
+      "code": "color: #fb64b6",
       "previewColor": {
         "r": 251,
         "g": 100,
@@ -6877,7 +7151,7 @@
       "className": "text-pink-500",
       "description": "Sets text color to pink",
       "origin": "Hywind",
-      "code": "color: rgb(246, 51, 154)",
+      "code": "color: #f6339a",
       "previewColor": {
         "r": 246,
         "g": 51,
@@ -6888,7 +7162,7 @@
       "className": "text-pink-600",
       "description": "Sets text color to pink",
       "origin": "Hywind",
-      "code": "color: rgb(230, 0, 118)",
+      "code": "color: #e60076",
       "previewColor": {
         "r": 230,
         "g": 0,
@@ -6899,7 +7173,7 @@
       "className": "text-pink-700",
       "description": "Sets text color to pink",
       "origin": "Hywind",
-      "code": "color: rgb(198, 0, 92)",
+      "code": "color: #c6005c",
       "previewColor": {
         "r": 198,
         "g": 0,
@@ -6910,7 +7184,7 @@
       "className": "text-pink-800",
       "description": "Sets text color to pink",
       "origin": "Hywind",
-      "code": "color: rgb(163, 0, 76)",
+      "code": "color: #a3004c",
       "previewColor": {
         "r": 163,
         "g": 0,
@@ -6921,7 +7195,7 @@
       "className": "text-pink-900",
       "description": "Sets text color to pink",
       "origin": "Hywind",
-      "code": "color: rgb(134, 16, 67)",
+      "code": "color: #861043",
       "previewColor": {
         "r": 134,
         "g": 16,
@@ -6932,7 +7206,7 @@
       "className": "text-pink-950",
       "description": "Sets text color to pink",
       "origin": "Hywind",
-      "code": "color: rgb(81, 4, 36)",
+      "code": "color: #510424",
       "previewColor": {
         "r": 81,
         "g": 4,
@@ -6943,7 +7217,7 @@
       "className": "text-rose-50",
       "description": "Sets text color to rose",
       "origin": "Hywind",
-      "code": "color: rgb(255, 241, 242)",
+      "code": "color: #fff1f2",
       "previewColor": {
         "r": 255,
         "g": 241,
@@ -6954,7 +7228,7 @@
       "className": "text-rose-100",
       "description": "Sets text color to rose",
       "origin": "Hywind",
-      "code": "color: rgb(255, 228, 230)",
+      "code": "color: #ffe4e6",
       "previewColor": {
         "r": 255,
         "g": 228,
@@ -6965,7 +7239,7 @@
       "className": "text-rose-200",
       "description": "Sets text color to rose",
       "origin": "Hywind",
-      "code": "color: rgb(255, 204, 211)",
+      "code": "color: #ffccd3",
       "previewColor": {
         "r": 255,
         "g": 204,
@@ -6976,7 +7250,7 @@
       "className": "text-rose-300",
       "description": "Sets text color to rose",
       "origin": "Hywind",
-      "code": "color: rgb(255, 161, 173)",
+      "code": "color: #ffa1ad",
       "previewColor": {
         "r": 255,
         "g": 161,
@@ -6987,7 +7261,7 @@
       "className": "text-rose-400",
       "description": "Sets text color to rose",
       "origin": "Hywind",
-      "code": "color: rgb(255, 99, 126)",
+      "code": "color: #ff637e",
       "previewColor": {
         "r": 255,
         "g": 99,
@@ -6998,7 +7272,7 @@
       "className": "text-rose-500",
       "description": "Sets text color to rose",
       "origin": "Hywind",
-      "code": "color: rgb(255, 32, 86)",
+      "code": "color: #ff2056",
       "previewColor": {
         "r": 255,
         "g": 32,
@@ -7009,7 +7283,7 @@
       "className": "text-rose-600",
       "description": "Sets text color to rose",
       "origin": "Hywind",
-      "code": "color: rgb(236, 0, 63)",
+      "code": "color: #ec003f",
       "previewColor": {
         "r": 236,
         "g": 0,
@@ -7020,7 +7294,7 @@
       "className": "text-rose-700",
       "description": "Sets text color to rose",
       "origin": "Hywind",
-      "code": "color: rgb(199, 0, 54)",
+      "code": "color: #c70036",
       "previewColor": {
         "r": 199,
         "g": 0,
@@ -7031,7 +7305,7 @@
       "className": "text-rose-800",
       "description": "Sets text color to rose",
       "origin": "Hywind",
-      "code": "color: rgb(165, 0, 54)",
+      "code": "color: #a50036",
       "previewColor": {
         "r": 165,
         "g": 0,
@@ -7042,7 +7316,7 @@
       "className": "text-rose-900",
       "description": "Sets text color to rose",
       "origin": "Hywind",
-      "code": "color: rgb(139, 8, 54)",
+      "code": "color: #8b0836",
       "previewColor": {
         "r": 139,
         "g": 8,
@@ -7053,7 +7327,7 @@
       "className": "text-rose-950",
       "description": "Sets text color to rose",
       "origin": "Hywind",
-      "code": "color: rgb(77, 2, 24)",
+      "code": "color: #4d0218",
       "previewColor": {
         "r": 77,
         "g": 2,

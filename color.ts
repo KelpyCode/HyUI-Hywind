@@ -86,6 +86,12 @@ export function oklchStringToHex(oklchStr: string): string | null {
         .join('');
 }
 
+export function rgbToHex(rgb: { r: number; g: number; b: number }): string {
+    return '#' + [rgb.r, rgb.g, rgb.b]
+        .map(x => x.toString(16).padStart(2, '0'))
+        .join('');
+}
+
 export function rgbToString(rgb: { r: number; g: number; b: number }): string {
     return `rgb(${rgb.r}, ${rgb.g}, ${rgb.b})`;
 }
