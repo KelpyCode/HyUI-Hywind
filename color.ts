@@ -89,3 +89,13 @@ export function oklchStringToHex(oklchStr: string): string | null {
 export function rgbToString(rgb: { r: number; g: number; b: number }): string {
     return `rgb(${rgb.r}, ${rgb.g}, ${rgb.b})`;
 }
+
+export function stringToRgb(rgbStr: string): { r: number; g: number; b: number } | null {
+    const match = rgbStr.match(/rgb\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})\s*\)/i);
+    if (!match) return null;
+    return {
+        r: parseInt(match[1], 10),
+        g: parseInt(match[2], 10),
+        b: parseInt(match[3], 10),
+    };
+}

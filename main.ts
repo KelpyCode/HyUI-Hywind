@@ -1,6 +1,8 @@
 import { writeFileSync } from "node:fs";
 import colors from "npm:tailwindcss/colors"
 import { oklchStringToRgb255 } from './color.ts';
+import { DOMParser, Element } from "jsr:@b-fuze/deno-dom";
+
 
 
 const DEFINITIONS = {
@@ -74,16 +76,106 @@ const DEFINITIONS = {
 }
 
 
+let metadata = {
+  classes: [] as Array<{ className: string, description?: string, previewColor?: { r: number, g: number, b: number }, code?: string, origin?: Origin }>,
+  props: [] as Array<{ propName: string, description?: string, origin?: Origin }>
+}
+
+async function fetchAttributeData() {
+  const ATTRIBUTES_URL = "https://hyui.gitbook.io/docs/home/hyuiml-htmlish-in-hytale";
+  // Fetch url and get string body
+  const attributesResponse = await fetch(ATTRIBUTES_URL);
+  const attributesHtml = await attributesResponse.text();
+
+  const dom = new DOMParser().parseFromString(attributesHtml, "text/html");
+  if (!dom) {
+    console.error("Failed to parse attributes HTML");
+    return;
+  }
+
+  const attributesHeader = dom.querySelector("h2#attributes");
+  // Go two siblings down to get the ul list
+  let ulElement: Element | null = attributesHeader;
+  for (let i = 0; i < 2; i++) {
+    if (ulElement) {
+      ulElement = ulElement.nextElementSibling;
+    }
+  }
+
+  ulElement?.querySelectorAll("li").forEach(li => {
+    const content = li.textContent.trim();
+    // Split at first :
+    const colonIndex = content.indexOf(":");
+    if (colonIndex !== -1) {
+      const attributeName = content.slice(0, colonIndex).trim();
+      const attributeDescription = content.slice(colonIndex + 1).trim();
+
+      attributeName.split(",").forEach(namePart => {
+        metadata.props.push({
+          propName: namePart.trim(),
+          description: attributeDescription
+        });
+      });
+
+
+    }
+  });
+}
+
+await fetchAttributeData();
+
+// Escape HTML but turn actual HTML tags into visible <code> blocks.
+function escapeHtml(str: string): string {
+  return str
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/\"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
+function escapeHtmlWithCodeBlocks(input: string): string {
+  const tagRegex = /<[^>]*>/g;
+  let lastIndex = 0;
+  let result = "";
+  let match: RegExpExecArray | null;
+
+  while ((match = tagRegex.exec(input)) !== null) {
+    const index = match.index;
+    // text before the tag: escape normally
+    result += escapeHtml(input.slice(lastIndex, index));
+    // the tag itself: show as escaped inside a <code> block
+    const tag = match[0];
+    result += `<code>${escapeHtml(tag)}</code>`;
+    lastIndex = index + tag.length;
+  }
+
+  if (lastIndex < input.length) {
+    result += escapeHtml(input.slice(lastIndex));
+  }
+
+  return result;
+}
+
+
 let gen = "";
-
-
 gen += "<style>\n"
 
+
+enum Origin {
+  Other = "",
+  HyUI = "HyUI",
+  Hywind = "Hywind"
+}
 
 
 type StyleRule = {
   selector: string;
+  description?: string;
+  previewColor?: { r: number, g: number, b: number };
   properties: StyleProperty[];
+  origin?: Origin;
+  code?: string;
 }
 
 type StyleProperty = {
@@ -99,12 +191,34 @@ function generateStyleRule(rule: StyleRule): string {
     result += `${prop.property}: ${prop.value}; `;
   }
   result += `}\n`;
+
+  const code = rule.properties.map(p => `${p.property}: ${p.value}`).join("; ");
+  let newDescription = escapeHtmlWithCodeBlocks(rule.description ?? "");
+
+  metadata.classes.push({
+    className: rule.selector.replace(".", "").replaceAll("\\", ""),
+    description: newDescription,
+    origin: rule.origin ?? Origin.Other,
+    code,
+    previewColor: rule.previewColor
+  })
   return result;
 }
 
-function simpleRule(selector: string, property: string, value: string): StyleRule {
+function metadataClass(className: string, description?: string) {
+  metadata.classes.push({
+    className,
+    origin: Origin.HyUI,
+    description: description ? escapeHtmlWithCodeBlocks(description) : undefined
+  });
+}
+
+function simpleRule(selector: string, property: string, value: string, description?: string, previewColor?: { r: number, g: number, b: number }): StyleRule {
   return {
     selector: selector,
+    description: escapeHtmlWithCodeBlocks(description ?? ""),
+    previewColor: previewColor,
+    origin: Origin.Hywind,
     properties: [
       {
         property: property,
@@ -114,9 +228,11 @@ function simpleRule(selector: string, property: string, value: string): StyleRul
   };
 }
 
-function simpleMappedRules(selectorPrefix: string, property: string, values: string[]): StyleRule[] {
+function simpleMappedRules(selectorPrefix: string, property: string, values: string[], description?: (value: string) => string): StyleRule[] {
   return values.map((value, index) => ({
     selector: `${selectorPrefix}-${value}`,
+    description: description ? description(value) : undefined,
+    origin: Origin.Hywind,
     properties: [
       {
         property: property,
@@ -132,6 +248,7 @@ function simpleMappedRules(selectorPrefix: string, property: string, values: str
 for (let i = 0; i <= DEFINITIONS.padding.amount; i++) {
   const rule: StyleRule = {
     selector: `.p-${i}`,
+    origin: Origin.Hywind,
     properties: [
       {
         property: "padding",
@@ -159,6 +276,15 @@ rules.push(
   ...simpleMappedRules(".vertical", "vertical-align", ["top", "middle", "bottom"]),
   ...simpleMappedRules(".horizontal", "horizontal-align", ["left", "center", "right"])
 )
+
+metadataClass("tab-content", "(div) Tab content container linked to a tab ID.")
+metadataClass("decorated-container", "(div) Uses the decorated container UI file for a styled frame.")
+metadataClass("container", "(div) Uses the container UI file for a frame with minimal style.")
+metadataClass("item-icon", "(span) Displays an item icon. Use data-hyui-item-id for the item icon.")
+metadataClass("item-slot", "(span) Displays a full item slot. Use data-hyui-item-id for the item.")
+metadataClass("item-grid", "(span) Displays an item grid container.")
+metadataClass("item-grid-slot", "(span) Adds a slot entry inside an item grid.")
+metadataClass("tabs", "(nav) Tab navigation bar.")
 
 // Anchors
 
@@ -188,12 +314,14 @@ for (const anchor of [["width", "w"], ["height", "h"]]) {
 for (const [sizeName, sizeValue] of Object.entries(DEFINITIONS.textSize)) {
   const rule: StyleRule = {
     selector: `.text-${sizeName}`,
+    origin: Origin.Hywind,
     properties: [
       {
         property: "font-size",
         value: `${sizeValue}`
       }
-    ]
+    ],
+    description: `Sets text size to ${sizeName}`
   };
   rules.push(rule);
 }
@@ -206,12 +334,15 @@ for (const [name, value] of Object.entries(colors)) {
     if (rgb) {
       const rule: StyleRule = {
         selector: `.bg-${name}`,
+        origin: Origin.Hywind,
         properties: [
           {
             property: "background-color",
             value: `rgb(${rgb.r}, ${rgb.g}, ${rgb.b})`
           }
-        ]
+        ],
+        previewColor: rgb,
+        description: `Sets background color to ${name}`
       };
       rules.push(rule);
     }
@@ -223,12 +354,15 @@ for (const [name, value] of Object.entries(colors)) {
         if (rgb) {
           const rule: StyleRule = {
             selector: `.bg-${name}-${shade}`,
+            origin: Origin.Hywind,
             properties: [
               {
                 property: "background-color",
                 value: `rgb(${rgb.r}, ${rgb.g}, ${rgb.b})`
               }
-            ]
+            ],
+            previewColor: rgb,
+            description: `Sets background color to ${name}`
           };
           rules.push(rule);
         }
@@ -237,6 +371,7 @@ for (const [name, value] of Object.entries(colors)) {
   }
 }
 
+// Text color
 
 for (const [name, value] of Object.entries(colors)) {
   if (typeof value === "string") {
@@ -245,12 +380,15 @@ for (const [name, value] of Object.entries(colors)) {
     if (rgb) {
       const rule: StyleRule = {
         selector: `.text-${name}`,
+        origin: Origin.Hywind,
         properties: [
           {
             property: "color",
             value: `rgb(${rgb.r}, ${rgb.g}, ${rgb.b})`
           }
-        ]
+        ],
+        previewColor: rgb,
+        description: `Sets text color to ${name}`
       };
       rules.push(rule);
     }
@@ -262,12 +400,16 @@ for (const [name, value] of Object.entries(colors)) {
         if (rgb) {
           const rule: StyleRule = {
             selector: `.text-${name}-${shade}`,
+            origin: Origin.Hywind,
             properties: [
               {
                 property: "color",
                 value: `rgb(${rgb.r}, ${rgb.g}, ${rgb.b})`
               }
-            ]
+            ],
+            previewColor: rgb,
+            description: `Sets text color to ${name}`
+
           };
           rules.push(rule);
         }
@@ -288,3 +430,4 @@ gen += "</style>\n";
 
 // Write to styles.html
 writeFileSync("hywind.html", gen);
+writeFileSync("hywind-meta.json", JSON.stringify(metadata, null, 2));
