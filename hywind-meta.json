@@ -46,32 +46,32 @@
       "description": "(img) Downloads and streams a PNG at runtime (see Dynamic Images)."
     },
     {
-      "className": "button-back",
+      "className": "back-button",
       "origin": "HyUI",
       "description": "(button) Styled button of type back."
     },
     {
-      "className": "button-secondary",
+      "className": "secondary-button",
       "origin": "HyUI",
       "description": "(button) Styled button of type secondary."
     },
     {
-      "className": "button-small-secondary",
+      "className": "small-secondary-button",
       "origin": "HyUI",
       "description": "(button) Styled button of type small-secondary."
     },
     {
-      "className": "button-tertiary",
+      "className": "tertiary-button",
       "origin": "HyUI",
       "description": "(button) Styled button of type tertiary."
     },
     {
-      "className": "button-small-tertiary",
+      "className": "small-tertiary-button",
       "origin": "HyUI",
       "description": "(button) Styled button of type small-tertiary."
     },
     {
-      "className": "button-custom",
+      "className": "custom-button",
       "origin": "HyUI",
       "description": "(button) Styled button of type custom."
     },

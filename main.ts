@@ -288,7 +288,7 @@ metadataClass("tabs", "(nav) Tab navigation bar.")
 metadataClass("dynamic-image", "(img) Downloads and streams a PNG at runtime (see Dynamic Images).")
 
   ;["back", "secondary", "small-secondary", "tertiary", "small-tertiary", "custom"].forEach(btnType => {
-    metadataClass(`button-${btnType}`, `(button) Styled button of type ${btnType}.`);
+    metadataClass(`${btnType}-button`, `(button) Styled button of type ${btnType}.`);
   });
 
 metadataClass("custom-textbutton", "(button) Alternative to custom-button.");
